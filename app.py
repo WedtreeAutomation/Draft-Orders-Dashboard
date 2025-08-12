@@ -959,8 +959,19 @@ def login_form():
         )
 
         with st.form("login_form", clear_on_submit=False):
-            email = st.text_input("", placeholder="Enter your email address", key="email", label_visibility="collapsed")
-            password = st.text_input("", type="password", placeholder="Enter your password", key="password", label_visibility="collapsed")
+            email = st.text_input(
+                "Email",  # not empty
+                placeholder="Enter your email address",
+                key="email",
+                label_visibility="collapsed"
+            )
+            password = st.text_input(
+                "Password",  # not empty
+                type="password",
+                placeholder="Enter your password",
+                key="password",
+                label_visibility="collapsed"
+            )
 
             submitted = st.form_submit_button("🚀 Sign In to Dashboard", use_container_width=True, type="primary")
 
