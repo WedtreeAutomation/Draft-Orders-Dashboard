@@ -1,0 +1,7 @@
+requests
+pandas
+plotly
+streamlit
+streamlit-extras
+python-dotenv
+xlsxwriter
